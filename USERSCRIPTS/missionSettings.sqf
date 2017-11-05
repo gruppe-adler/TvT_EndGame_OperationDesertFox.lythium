@@ -1,5 +1,5 @@
-author = "nomisum für Gruppe Adler";       //mission author
-onLoadName = "ENDGAME TEMPLATE";        //mission name (using allcaps looks better)
+author = "Nomisum für Gruppe Adler";       //mission author
+onLoadName = "ENDGAME DESERTFOX";        //mission name (using allcaps looks better)
 onLoadMission = "";                     //description in loadscreen
 loadScreen = "data\loadpic.paa";        //picture in loadscreen
 
