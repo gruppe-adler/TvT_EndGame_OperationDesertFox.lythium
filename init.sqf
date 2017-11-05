@@ -23,7 +23,7 @@ if (isServer) then {
   _wshndl = [] execVM "helpers\wavesize.sqf";
   waitUntil {scriptDone _wshndl};
 
-  SHOWCARRIERMARKER = ["carriermarker", false] call BIS_fnc_getParamValue;
+  SHOWCARRIERMARKER = (["carriermarker", 0] call BIS_fnc_getParamValue) == 1;
   publicVariable "SHOWCARRIERMARKER";
 
   OPFOR_ELIMINATED = false;

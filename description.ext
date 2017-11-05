@@ -32,9 +32,9 @@ class Params
 	class carriermarker
 	{
 		title = "Show Carrier Marker on Map";
-		values[] = {true, false};
+		values[] = {1, 0};
 		texts[] = {"Yes", "No"};
-		default = false;
+		default = 0;
 	};
 
 	class civiliantraffic
