@@ -8,6 +8,7 @@ class RU_Desert {
 		addItemsToUniform[] = {"rhs_acc_2dpZenit", LIST_6("ACE_fieldDressing"), LIST_2("ACE_morphine"), "ACE_epinephrine", "ACE_Flashlight_MX991", "ACE_key_east", "ACE_MapTools", LIST_2("Chemlight_red"), LIST_2("16Rnd_9x21_Mag")};
 		headgear = "rhs_6b27m_ml";
 		radio = "tf_fadak";
+		nvgoggles = "";
 	};
 	class Type {
 		class Soldier_F {

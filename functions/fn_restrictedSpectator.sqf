@@ -12,7 +12,7 @@ if (count _spectatableUnits < 1) then {_spectatableUnits = [player]};
 [_spectatableUnits] spawn {
     params ["_spectatableUnits"];
     sleep 1;
-    [ace_spectator_unitList, []] call ace_spectator_fnc_updateUnits;
+    [[] call ace_spectator_fnc_players, []] call ace_spectator_fnc_updateUnits;
     sleep 2;
     [_spectatableUnits, []] call ace_spectator_fnc_updateUnits;
 };

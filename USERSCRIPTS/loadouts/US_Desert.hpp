@@ -11,6 +11,7 @@ class US_Desert {
 		backpack = "rhsusf_assault_eagleaiii_coy";
 		headgear = "rhsusf_mich_helmet_marpatd_headset";
 		radio = "tf_anprc148jem";
+		nvgoggles = "";
 	};
 
 	class Type {

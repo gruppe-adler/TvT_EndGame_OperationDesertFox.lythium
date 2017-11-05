@@ -13,15 +13,10 @@ _respawnIn = parseText format ["<t align='center' size='1.4'>Respawn <t color='#
 hint composeText [_rule, _phase, _lineBreak, _respawnIn, _lineBreak, _rule];
 
 //start spectator
-if (GAMEPHASE < 3) then {
-	[[playerSide], [([west, east, civilian, independent] - [playerSide])]] call ace_spectator_fnc_updateSides;
-	[playableUnits + switchableUnits, []] call ace_spectator_fnc_updateUnits;
-	[[1], [0,2]] call ace_spectator_fnc_updateCameraModes;
-} else {
-	[[[west, east, civilian, independent], []] call ace_spectator_fnc_updateSides;
-	[playableUnits + switchableUnits, []] call ace_spectator_fnc_updateUnits;
-	[[0,1,2], []] call ace_spectator_fnc_updateCameraModes;
-};
+
+[[west, east, civilian, independent], []] call ace_spectator_fnc_updateSides;
+// [playableUnits + switchableUnits, []] call ace_spectator_fnc_updateUnits;
+[[0,1,2], []] call ace_spectator_fnc_updateCameraModes;
 [true] call ace_spectator_fnc_setSpectator;
 
 

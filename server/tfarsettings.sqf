@@ -7,53 +7,53 @@
 //AUTOMATIC RADIOS
 if (isNil "AUTOMATICRADIOS") then {AUTOMATICRADIOS = false};
 if (AUTOMATICRADIOS) then {
-  TF_give_microdagr_to_soldier = true;
-  TF_give_personal_radio_to_regular_soldier = true;
+  TFAR_giveMicroDagrToSoldier = true;
+  TFAR_givePersonalRadioToRegularSoldier = true;
   tf_no_auto_long_range_radio = false;
 } else {
-  TF_give_microdagr_to_soldier = false;
-  TF_give_personal_radio_to_regular_soldier = false;
+  TFAR_giveMicroDagrToSoldier = false;
+  TFAR_givePersonalRadioToRegularSoldier = false;
   tf_no_auto_long_range_radio = true;
 };
-publicVariable "TF_give_microdagr_to_soldier";
-publicVariable "TF_give_personal_radio_to_regular_soldier";
+publicVariable "TFAR_giveMicroDagrToSoldier";
+publicVariable "TFAR_givePersonalRadioToRegularSoldier";
 publicVariable "tf_no_auto_long_range_radio";
 
 
 //DEFAULT RADIOS
 if (isNil "BLUFORSWRADIO") then {
-  TF_defaultWestRiflemanRadio = "tf_anprc152";
-  TF_defaultWestPersonalRadio = "tf_anprc152";
+  TFAR_DefaultRadio_Rifleman_West = "tf_anprc152";
+  TFAR_DefaultRadio_Personal_West = "tf_anprc152";
 } else {
-  TF_defaultWestRiflemanRadio = BLUFORSWRADIO;
-  TF_defaultWestPersonalRadio = BLUFORSWRADIO;
+  TFAR_DefaultRadio_Rifleman_West = BLUFORSWRADIO;
+  TFAR_DefaultRadio_Personal_West = BLUFORSWRADIO;
 };
 
 if (isNil "OPFORSWRADIO") then {
-  TF_defaultEastRiflemanRadio = "tf_fadak";
-  TF_defaultEastPersonalRadio = "tf_fadak";
+  TFAR_DefaultRadio_Rifleman_East = "tf_fadak";
+  TFAR_DefaultRadio_Personal_East = "tf_fadak";
 } else {
-  TF_defaultEastRiflemanRadio = OPFORSWRADIO;
-  TF_defaultEastPersonalRadio = OPFORSWRADIO;
+  TFAR_DefaultRadio_Rifleman_East = OPFORSWRADIO;
+  TFAR_DefaultRadio_Personal_East = OPFORSWRADIO;
 };
 
 if (isNil "BLUFORLRRADIO") then {
-  TF_defaultWestBackpack = "tf_rt1523g_big_rhs";
+  TFAR_DefaultRadio_Backpack_West = "tf_rt1523g_big_rhs";
 } else {
-  TF_defaultWestBackpack = BLUFORLRRADIO;
+  TFAR_DefaultRadio_Backpack_West = BLUFORLRRADIO;
 };
 
 if (isNil "OPFORLRRADIO") then {
-  TF_defaultEastBackpack = "tf_mr3000_rhs";
+  TFAR_DefaultRadio_Backpack_East = "tf_mr3000_rhs";
 } else {
-  TF_defaultEastBackpack = OPFORLRRADIO;
+  TFAR_DefaultRadio_Backpack_East = OPFORLRRADIO;
 };
-publicVariable "TF_defaultWestRiflemanRadio";
-publicVariable "TF_defaultWestPersonalRadio";
-publicVariable "TF_defaultEastRiflemanRadio";
-publicVariable "TF_defaultEastPersonalRadio";
-publicVariable "TF_defaultWestBackpack";
-publicVariable "TF_defaultEastBackpack";
+publicVariable "TFAR_DefaultRadio_Rifleman_West";
+publicVariable "TFAR_DefaultRadio_Personal_West";
+publicVariable "TFAR_DefaultRadio_Rifleman_East";
+publicVariable "TFAR_DefaultRadio_Personal_East";
+publicVariable "TFAR_DefaultRadio_Backpack_West";
+publicVariable "TFAR_DefaultRadio_Backpack_East";
 
 
 //SAME ENCRYPTION

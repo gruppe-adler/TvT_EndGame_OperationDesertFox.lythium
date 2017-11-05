@@ -8,6 +8,11 @@ if ((_this select 0) == "SERVER" && hasInterface) exitWith {};
 if (isNil "UPLOADSPEED") then {UPLOADSPEED = 1};
 waitUntil {sleep 10; GAMEPHASE == 3};
 
+{
+  [[west, east, civilian, independent], []] remoteExec ["ace_spectator_fnc_updateSides", _x];
+} forEach ([] call ace_spectator_fnc_players);
+
+[[0,1,2], []] remoteExec ["ace_spectator_fnc_updateCameraModes", [] call ace_spectator_fnc_players];
 
 _allfound = false;
 _i = 1;

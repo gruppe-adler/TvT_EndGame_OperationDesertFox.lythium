@@ -9,7 +9,9 @@ private ["_timeleft","_waveLeft","_minutes","_seconds","_respawnIn", "_explanati
 if (serverTime-joinTime < 30 && didJIP) exitWith {diag_log "Player is JIP, not executing onPlayerKilled.sqf"};
 
 //exit if phase 3
-if (GAMEPHASE >= 3) exitWith {call mcd_fnc_startSpectator};
+if (GAMEPHASE >= 3) then {
+    call mcd_fnc_startSpectator;
+};
 
 //set max respawn time
 if (isNil "MAXRESPAWNTIME") then {MAXRESPAWNTIME = 1200};
@@ -25,7 +27,10 @@ _timeOfDeath = time;
 setPlayerRespawnTime 9999;
 sleep 2;
 
-
+[[playerSide], [west, east, civilian, independent] - [playerSide]] call ace_spectator_fnc_updateSides;
+// [playableUnits + switchableUnits, []] call ace_spectator_fnc_updateUnits;
+[[1], [0,2]] call ace_spectator_fnc_updateCameraModes;
+[true] call ace_spectator_fnc_setSpectator;
 
 //declare/define variables =====================================================
 _rule = parseText "<t align='center'><t color='#708090'>-----------------------------------------------------<br /></t></t>";
@@ -84,7 +89,7 @@ while {_timeleft > 0} do {
     if (!(call _waitCondition) && call _freeRespawn) exitWith {diag_log "onPlayerKilled.sqf - free respawn at FOB, breaking countdown"};
     if (GAMEPHASE >= 3) exitWith {};
 };
-if (!(call _freeRespawn)) exitWith {call mcd_fnc_startSpectator}; // GAMEPHASE is now irrelevant to spectate
+
 
 //send command to server to add player to wave array
 [profileName, originalSide] remoteExec ["mcd_fnc_addDeadPlayerToWave",2,false];
@@ -115,7 +120,6 @@ while _waitCondition do {
     if (time - _timeOfDeath > MAXRESPAWNTIME && (call _playersLeft) >= RESPAWNWAVESIZE-1) exitWith {};
     if (GAMEPHASE >= 3) exitWith {};
 };
-if (GAMEPHASE >= 3 && !(call _freeRespawn)) exitWith {call mcd_fnc_startSpectator};
 sleep 0.5;
 
 

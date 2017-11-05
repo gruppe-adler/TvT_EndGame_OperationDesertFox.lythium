@@ -8,7 +8,8 @@ if (serverTime-joinTime < 30 && didJIP) exitWith {diag_log "Player is JIP, not e
 
 //terminate spectator
 [player, false] call TFAR_fnc_forceSpectator;
-[false] call ace_spectator_fnc_setSpectator;
+[false, false, false] call ace_spectator_fnc_setSpectator;
+// player hideObjectGlobal false; // doublecheck invisible bug
 
 //notify server
 [profileName, originalSide, player] remoteExec ["mcd_fnc_handleRespawned",2,false];
