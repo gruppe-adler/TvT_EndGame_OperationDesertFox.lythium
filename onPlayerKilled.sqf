@@ -84,7 +84,7 @@ while {_timeleft > 0} do {
     if (!(call _waitCondition) && call _freeRespawn) exitWith {diag_log "onPlayerKilled.sqf - free respawn at FOB, breaking countdown"};
     if (GAMEPHASE >= 3) exitWith {};
 };
-if (GAMEPHASE >= 3 && !(call _freeRespawn)) exitWith {call mcd_fnc_startSpectator};
+if (!(call _freeRespawn)) exitWith {call mcd_fnc_startSpectator}; // GAMEPHASE is now irrelevant to spectate
 
 //send command to server to add player to wave array
 [profileName, originalSide] remoteExec ["mcd_fnc_addDeadPlayerToWave",2,false];
