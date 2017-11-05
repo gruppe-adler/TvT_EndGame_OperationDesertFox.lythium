@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={16509.002,265.60281,15400.3};
-		dir[]={-0.2691966,-0.37739658,-0.88608128};
-		up[]={-0.10970743,0.92604876,-0.36111185};
-		aside[]={-0.9568339,-2.1758024e-007,0.29069281};
+		pos[]={19578.707,142.67081,18540.34};
+		dir[]={-0.38750798,-0.50348294,0.77223277};
+		up[]={-0.22581311,0.86400509,0.45000458};
+		aside[]={0.89378238,2.4680048e-008,0.44850191};
 	};
 };
 binarizationWanted=0;
@@ -808,7 +808,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=50;
+							value=150;
 						};
 					};
 				};
@@ -918,7 +918,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=50;
+							value=150;
 						};
 					};
 				};
@@ -1047,7 +1047,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Retrieve Intel from Fennek";
+							value="Intel finden";
 						};
 					};
 				};
@@ -1228,10 +1228,11 @@ class Mission
 			class PositionInfo
 			{
 				position[]={19578.707,117.67081,18565.34};
-				angles[]={6.2796984,0,6.1966734};
+				angles[]={6.2796946,0,6.1966691};
 			};
 			id=58;
 			type="ModuleHvtSimpleObjective_F";
+			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1268,7 +1269,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Retrieve Intel from Container";
+							value="Intel finden";
 						};
 					};
 				};
@@ -1569,7 +1570,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15166.884,136.44437,14932.049};
-				angles[]={0.0016914561,0,6.2817206};
+				angles[]={0.0016929695,0,6.2817187};
 			};
 			id=104;
 			type="ModuleHvtSimpleObjective_F";
@@ -1609,7 +1610,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Retrieve Intel from Plane";
+							value="Wrack durchsuchen";
 						};
 					};
 				};
@@ -1679,7 +1680,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={12983.773,221.14055,15330.957};
-				angles[]={6.1272612,0,6.0340691};
+				angles[]={6.1272578,0,6.0340743};
 			};
 			id=106;
 			type="ModuleHvtSimpleObjective_F";
@@ -1719,7 +1720,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Download Intel from Laptop";
+							value="Intel vom Laptop herunterladen";
 						};
 					};
 				};
@@ -7417,7 +7418,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={17745.115,48.102394,14850.064};
-				angles[]={0.0078353751,0,0.017346233};
+				angles[]={0.0078365281,0,0.017348573};
 			};
 			id=685;
 			type="ModuleHvtSimpleObjective_F";
@@ -7438,7 +7439,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -7457,7 +7458,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Retrieve Intel from Container";
+							value="Intel finden";
 						};
 					};
 				};
@@ -7476,7 +7477,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="obj_download_2";
+							value="obj_download_5";
 						};
 					};
 				};
@@ -7527,7 +7528,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={17565.973,272.94104,17387};
-				angles[]={6.2493882,0,6.2705512};
+				angles[]={6.2493954,0,6.2705493};
 			};
 			id=687;
 			type="ModuleHvtSimpleObjective_F";
@@ -7567,7 +7568,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Retrieve Intel from Plane";
+							value="Intel beim abgestürzten Hubschrauber finden";
 						};
 					};
 				};
@@ -7586,7 +7587,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="obj_download_3";
+							value="obj_download_6";
 						};
 					};
 				};
@@ -7652,12 +7653,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={13934.551,233.15488,12973.967};
-				angles[]={0.11449809,0,0.012000273};
+				position[]={13845.226,238.00911,12888.38};
+				angles[]={0.053948127,0,6.2681928};
 			};
 			id=690;
 			type="ModuleHvtSimpleObjective_F";
-			atlOffset=0.0065002441;
+			atlOffset=1.5258789e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -7675,7 +7676,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=1;
+							value=0;
 						};
 					};
 				};
@@ -7694,7 +7695,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Retrieve Intel from Plane";
+							value="Intel finden";
 						};
 					};
 				};
@@ -7713,7 +7714,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="obj_download_3";
+							value="obj_download_7";
 						};
 					};
 				};
@@ -14089,6 +14090,29 @@ class Mission
 			id=1020;
 			type="TK_GUE_WarfareBAircraftFactory_Base_EP1";
 			atlOffset=-0.31999969;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="allowDamage";
+					expression="_this allowdamage _value;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 		class Item215
 		{
