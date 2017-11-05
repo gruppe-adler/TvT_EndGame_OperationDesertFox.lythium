@@ -22,6 +22,8 @@ mcd_fnc_endMission = {
 
   sleep 5;
 
+  waitUntil {REPLAY_FINISHED};
+
   ["end1", _isVictory, true, true, true] spawn BIS_fnc_endMission;
 };
 

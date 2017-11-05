@@ -16,7 +16,6 @@ if (isNil "MAXRESPAWNTIME") then {MAXRESPAWNTIME = 1200};
 
 //start spectator
 [player, true] call TFAR_fnc_forceSpectator;
-[] call mcd_fnc_restrictedSpectator;
 [true] call mcd_fnc_blockMap;
 /*[player] joinSilent grpNull;*/
 

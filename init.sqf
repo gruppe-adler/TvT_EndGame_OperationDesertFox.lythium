@@ -3,8 +3,8 @@
 RHS_ENGINE_STARTUP_OFF = true;
 
 //LOADOUTS =====================================================================
-["BLU_F", LOADOUTFACTIONBLU] call GRAD_Loadout_fnc_FactionSetLoadout;
-["OPF_F", LOADOUTFACTIONOPF] call GRAD_Loadout_fnc_FactionSetLoadout;
+["BLU_F", "US_Desert"] call GRAD_Loadout_fnc_FactionSetLoadout;
+["OPF_F", "RU_Desert"] call GRAD_Loadout_fnc_FactionSetLoadout;
 
 //ENGIMA TRAFFIC ===============================================================
 CIVILIAN_TRAFFIC = ["civiliantraffic", 0] call BIS_fnc_getParamValue;
@@ -12,8 +12,13 @@ if (CIVILIAN_TRAFFIC == 1) then {
   [] execVM "Engima\Traffic\Init.sqf";
 };
 
+
+
 //SERVER ONLY ==================================================================
 if (isServer) then {
+
+  // GRAD REPLAY
+  [REPLAY_ACCURACY] remoteExec ["GRAD_replay_init", 0, true];
 
   _wshndl = [] execVM "helpers\wavesize.sqf";
   waitUntil {scriptDone _wshndl};

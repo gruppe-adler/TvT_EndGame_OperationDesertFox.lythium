@@ -10,5 +10,7 @@ _timeLimit = (moduleEndGame getVariable "timelimit") + 10;
 
 waitUntil {sleep 5; time - _startTime > _timeLimit};
 
+call GRAD_replay_fnc_stopRecord;
+
 ENDINDRAW = true;
 publicVariable "ENDINDRAW";

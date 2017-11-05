@@ -1,5 +1,6 @@
 {
         "dependencies": {
-                "grad-loadout": "^4.4.0"
+                "grad-loadout": "^4.7.0",
+                "grad_replay": "github:gruppe-adler/grad_replay#master"
         }
 }

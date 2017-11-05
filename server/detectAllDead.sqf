@@ -39,6 +39,8 @@ checkForReal = {
         if (OPFOR_ELIMINATED || BLUFOR_ELIMINATED) exitWith {
             publicVariable "OPFOR_ELIMINATED";
             publicVariable "BLUFOR_ELIMINATED";
+
+            call GRAD_replay_fnc_stopRecord;
         };
         sleep 11;
     };
