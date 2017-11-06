@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2477;
+		nextID=2520;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=85;
+		nextID=99;
 	};
 	class Camera
 	{
-		pos[]={12321.339,366.64578,17053.186};
-		dir[]={0.1380485,-0.45828131,-0.87802267};
-		up[]={0.07117983,0.8888064,-0.45272091};
-		aside[]={-0.98786485,-9.7978045e-008,-0.15531847};
+		pos[]={13813.239,258.02768,12976.828};
+		dir[]={0.018363977,-0.30998692,-0.95057988};
+		up[]={0.005987409,0.95073622,-0.30994445};
+		aside[]={-0.99982631,-6.3413609e-008,-0.019315101};
 	};
 };
 binarizationWanted=0;
@@ -131,13 +131,16 @@ addons[]=
 	"A3_Structures_F_Items_Tools",
 	"A3_Props_F_Orange_Items_Tools",
 	"A3_Structures_F_Heli_Civ_Constructions",
-	"Desert"
+	"Desert",
+	"rhs_c_t72",
+	"rhs_c_tanks",
+	"rhs_c_air"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=75;
+		items=78;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -628,6 +631,27 @@ class AddonsMetaData
 			className="Desert";
 			name="Desert";
 		};
+		class Item75
+		{
+			className="rhs_c_t72";
+			name="T-72 Series Tanks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item76
+		{
+			className="rhs_c_tanks";
+			name="T-80 Series Tanks";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item77
+		{
+			className="rhs_c_air";
+			name="AFRF Planes";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
 	};
 };
 randomSeed=13667206;
@@ -693,7 +717,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=550;
+		items=590;
 		class Item0
 		{
 			dataType="Marker";
@@ -4257,7 +4281,7 @@ class Mission
 			};
 			id=136;
 			type="EvMoscow";
-			atlOffset=0.57305908;
+			atlOffset=0.57305145;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -18275,20 +18299,20 @@ class Mission
 						position[]={17434.883,285.88385,17420.131};
 					};
 					side="Independent";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 					};
 					id=1121;
 					type="LOP_ISTS_Infantry_B_AR";
-					atlOffset=0.018615723;
+					atlOffset=3.9143372;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1120;
-			atlOffset=0.018615723;
+			atlOffset=3.9143372;
 		};
 		class Item244
 		{
@@ -18948,12 +18972,13 @@ class Mission
 						angles[]={0,4.2572746,0};
 					};
 					side="Independent";
-					flags=7;
+					flags=3;
 					class Attributes
 					{
 					};
 					id=1145;
 					type="LOP_ISTS_Infantry_B_AR";
+					atlOffset=4.2868958;
 				};
 				class Item1
 				{
@@ -18964,18 +18989,20 @@ class Mission
 						angles[]={0,3.0898972,0};
 					};
 					side="Independent";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 					};
 					id=1146;
 					type="LOP_ISTS_Infantry_B_Rifleman";
+					atlOffset=4.0327072;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=1144;
+			atlOffset=4.2868958;
 		};
 		class Item262
 		{
@@ -20001,7 +20028,7 @@ class Mission
 			};
 			id=1336;
 			type="ModuleHvtSimpleObjective_F";
-			atlOffset=0.039009094;
+			atlOffset=0.039001465;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23783,13 +23810,13 @@ class Mission
 				angles[]={0.0032204373,3.014025,0.00069053395};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				name="obj_download_9";
 			};
 			id=2112;
 			type="Land_PCSet_01_case_F";
-			atlOffset=0.63406372;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23847,7 +23874,7 @@ class Mission
 			};
 			id=2114;
 			type="Land_CampingTable_small_F";
-			atlOffset=0.63150024;
+			atlOffset=0.63142395;
 		};
 		class Item362
 		{
@@ -28908,6 +28935,666 @@ class Mission
 			title="4";
 			id=2476;
 			atlOffset=-0.00021362305;
+		};
+		class Item550
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13777.131,236.81575,13024.082};
+				angles[]={-0,1.2741793,6.1904526};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2477;
+			type="Land_Wreck_Offroad_F";
+			atlOffset=0.0041656494;
+		};
+		class Item551
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13623.907,291.93719,13284.719};
+				angles[]={6.211309,0,6.1284332};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2478;
+			type="Land_Wreck_Slammer_F";
+		};
+		class Item552
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13653.64,286.5376,13291.698};
+				angles[]={6.2491984,2.6711199,6.1147971};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2479;
+			type="Land_Wreck_Slammer_hull_F";
+			atlOffset=0.010650635;
+		};
+		class Item553
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13580.573,290.35886,13246.441};
+				angles[]={6.001852,5.8225927,6.0590177};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2480;
+			type="Land_Wreck_Slammer_hull_F";
+		};
+		class Item554
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13791.757,236.77121,13093.443};
+				angles[]={6.2372193,0.20205508,6.218276};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2481;
+			type="Land_Wreck_Slammer_F";
+		};
+		class Item555
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13720.938,245.63329,13157.081};
+				angles[]={6.1756024,0,6.2023621};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2482;
+			type="Land_Wreck_Slammer_hull_F";
+			atlOffset=0.0065155029;
+		};
+		class Item556
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13729.94,242.18294,13016.915};
+				angles[]={0.060924344,3.1092539,6.1548948};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2483;
+			type="Land_Wreck_T72_hull_F";
+			atlOffset=0.0090026855;
+		};
+		class Item557
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13830.384,231.60349,12993.461};
+				angles[]={0.078835115,2.961292,6.1894608};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2484;
+			type="Land_Wreck_T72_hull_F";
+			atlOffset=0.004989624;
+		};
+		class Item558
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13800.677,237.08385,12946.833};
+				angles[]={0.054944519,2.8724127,6.2232571};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2485;
+			type="Land_Wreck_Slammer_hull_F";
+			atlOffset=0.0023193359;
+		};
+		class Item559
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13825.765,232.20967,12994.061};
+				angles[]={0.062918171,0,6.1973968};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2486;
+			type="Land_Wreck_T72_turret_F";
+			atlOffset=0.0047912598;
+		};
+		class Item560
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13794.934,237.27411,12944.404};
+				angles[]={0.048962239,0,6.2232561};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2487;
+			type="rhs_Wreck_T72_turret_F";
+			atlOffset=4.5776367e-005;
+		};
+		class Item561
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13736.098,241.20232,13017.038};
+				angles[]={0.034984674,1.6080091,6.1647425};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2488;
+			type="rhs_Wreck_T80u_turret_F";
+		};
+		class Item562
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13674.042,247.6104,13137.019};
+				angles[]={6.1284328,0.93623817,6.1647425};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2489;
+			type="Land_Wreck_BMP2_F";
+			atlOffset=0.016281128;
+		};
+		class Item563
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13728.567,238.39238,13088.943};
+				angles[]={0.047964405,0.45124689,6.2591896};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2490;
+			type="Land_Wreck_BRDM2_F";
+		};
+		class Item564
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13724.819,239.8546,13091.267};
+				angles[]={6.2093196,5.3950958,6.2591896};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2492;
+			type="Land_Wreck_Hunter_F";
+			atlOffset=0.0055999756;
+		};
+		class Item565
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13809.427,239.66287,12891.28};
+				angles[]={0.069887079,0,6.2372179};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2494;
+			type="rhs_Wreck_T72_turret_F";
+		};
+		class Item566
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13851.792,231.26543,12982.267};
+				angles[]={0.083802827,2.8967094,0.02399601};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2495;
+			type="hiluxWreck";
+			atlOffset=0.0031433105;
+		};
+		class Item567
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13727.71,242.33049,12913.496};
+				angles[]={6.269186,0,6.2322302};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2496;
+			type="datsun02Wreck";
+			atlOffset=0.0013580322;
+		};
+		class Item568
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13588.331,288.6225,13246.046};
+				angles[]={5.9917288,0.44244698,6.0695004};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2497;
+			type="T72WreckTurret";
+		};
+		class Item569
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17364.939,116.39201,12157.118};
+				angles[]={6.2093201,2.9256096,0.014998405};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2498;
+			type="Land_Wreck_Slammer_F";
+			atlOffset=0.0041885376;
+		};
+		class Item570
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17321.197,120.20377,12222.055};
+				angles[]={6.2422075,5.7279835,6.240212};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2499;
+			type="BMP2Wreck";
+			atlOffset=0.0014877319;
+		};
+		class Item571
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17325.998,120.21291,12239.749};
+				angles[]={6.2571931,4.7656746,6.2202682};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2500;
+			type="BRDMWreck";
+		};
+		class Item572
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17338.168,120.60754,12297.479};
+				angles[]={6.2412114,0.88393283,6.1608009};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2501;
+			type="Land_Wreck_T72_hull_F";
+		};
+		class Item573
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17343.609,119.94692,12292.781};
+				angles[]={6.24121,1.3710599,6.1637559};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2502;
+			type="Land_Wreck_T72_turret_F";
+			atlOffset=0.0066680908;
+		};
+		class Item574
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17261.643,123.77293,12221.897};
+				angles[]={6.2192721,0,6.2152901};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2503;
+			type="hiluxWreck";
+			atlOffset=0.0035247803;
+		};
+		class Item575
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17334.498,113.55344,12141.117};
+				angles[]={6.1845074,3.3332222,0.03798322};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=2504;
+			type="Land_Wreck_Slammer_hull_F";
+			atlOffset=0.00390625;
+		};
+		class Item576
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17333.852,114.9315,12139.433};
+				angles[]={0.040373188,1.2807676,0.12686576};
+			};
+			side="Empty";
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=2505;
+			type="Land_Wreck_Slammer_turret_F";
+			atlOffset=1.4210663;
+		};
+		class Item577
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17376.238,117.36318,12181.115};
+				angles[]={6.2262473,0,0.0019834081};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2506;
+			type="HMMWVWreck";
+		};
+		class Item578
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17376.453,116.2925,12177.991};
+				angles[]={6.2332273,0,0.0019834081};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2507;
+			type="Crater";
+		};
+		class Item579
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13925.858,228.96567,13033.618};
+				angles[]={0.028991109,1.695801,0.02399601};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2508;
+			type="Land_rhs_tu95_wreck";
+		};
+		class Item580
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13928.523,229.0822,13034.209};
+				angles[]={0.026993545,1.5620202,0.02599225};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2509;
+			type="CraterLong";
+		};
+		class Item581
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13931.553,228.70802,13050.076};
+				angles[]={0.02399601,5.281992,0.073864385};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2510;
+			type="CraterLong_small";
+		};
+		class Item582
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13946.662,230.13402,13033.042};
+				angles[]={0.022996427,4.6777053,0.059927464};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2511;
+			type="CraterLong";
+		};
+		class Item583
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13907.249,228.98134,13037.006};
+				angles[]={0.0219975,5.1190925,6.261188};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2512;
+			type="CraterLong_small";
+		};
+		class Item584
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13922.851,229.09044,13027.86};
+				angles[]={0.0219975,4.7369542,0.02399601};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2513;
+			type="CraterLong_small";
+		};
+		class Item585
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13933.036,229.12729,13040.081};
+				angles[]={0.034984674,4.30825,0.060924344};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2514;
+			type="CraterLong_small";
+		};
+		class Item586
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13944.368,229.69815,13047.439};
+				angles[]={0.018999385,4.101614,0.071876638};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2515;
+			type="CraterLong_small";
+		};
+		class Item587
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={13915.506,228.91202,13034.805};
+				angles[]={0.028991109,1.9474068,6.2661862};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2516;
+			type="CraterLong_small";
+		};
+		class Item588
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17295.684,120.39822,12205.521};
+				angles[]={6.2232571,2.5314422,6.2232571};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2517;
+			type="Land_Wreck_T72_hull_F";
+			atlOffset=-7.6293945e-005;
+		};
+		class Item589
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={17297.033,121.58868,12205.985};
+				angles[]={6.167913,1.3836231,6.0165205};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=2518;
+			type="Land_Wreck_T72_turret_F";
+			atlOffset=1.0550232;
 		};
 	};
 	class Connections
